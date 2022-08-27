@@ -2,11 +2,11 @@
 
 Catching Cherries Game.
 
+> Under Development.
+
 ## Usage
 
 * 1.)Run Executable.
-
-> Under Development.
 
 ## About C#
 
