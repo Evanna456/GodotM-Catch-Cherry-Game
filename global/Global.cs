@@ -7,7 +7,7 @@ public class Global : Node
 	// private int a = 2;
 	// private string b = "text";
 	
-	public health = 3;
+	public int health = 3;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
