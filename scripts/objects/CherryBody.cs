@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class FireBody : KinematicBody2D
+public class CherryBody : KinematicBody2D
 {
 	// Declare member variables here. Examples:
 	// private int a = 2;
@@ -16,21 +16,16 @@ public class FireBody : KinematicBody2D
 	}
 
 	public int movement_speed = 200;
-
+	
 	public Vector2 velocity = new Vector2();
-
-private void _on_Area2D_body_entered(object body)
+	
+		private void _on_Area2D_body_entered(object body)
 {
 	 var player = GetNode<PlayerVariables>("/root/PlayerVariables");
-		 player.health = player.health - 1;
-		if(player.health == 0){
-			GetTree().ChangeScene("res://StartMenu.tscn");
-			player.health = 10;
-			player.score = 0;
-		}else{
+		 player.score = player.score + 20;
 		 QueueFree();
-		}
 }
+	
 	public override void _PhysicsProcess(float delta)
 	{
 		if (Position.y > 720){
@@ -43,16 +38,13 @@ private void _on_Area2D_body_entered(object body)
 	   velocity = velocity.Normalized() * movement_speed;
 	   velocity = MoveAndSlide(velocity);
 	}
-
+	
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
 //  public override void _Process(float delta)
 //  {
 //      
 //  }
 }
-
-
-
 
 
 

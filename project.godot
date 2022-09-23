@@ -16,7 +16,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://global/Global.cs"
+PlayerVariables="*res://PlayerVariables.cs"
 
 [display]
 
