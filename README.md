@@ -1,4 +1,4 @@
-## About GodotM-Catch-Cherry-Game
+## GodotM-Catch-Cherry-Game
 
 Catching Cherries Game.
 
