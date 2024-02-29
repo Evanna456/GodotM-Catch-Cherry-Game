@@ -2,13 +2,7 @@
 
 Catching Cherries Game.
 
-> Under Development.
-
-## Usage
-
-* 1.)Run Executable.
-
-## About Godot
+## Godot
 
 <p align="center"><img src="https://i.imgur.com/dowa7Ts.png" width="150px" height="auto" alt="Logo"></a></p>
 
